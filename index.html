@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>  
+    <div class="container">
+        <h1>Rehber Uygulaması</h1>
+        <div class="bilgi bilgi--success">Başarılı</div>
+        <div class="bilgi bilgi--error">Başarısız</div>
+        <form id="form-rehber">
+            <div>
+                <label for="ad">Ad</label>
+                <input type="text" id="ad" class="u-full-width">
+            </div>
+            <div>
+                <label for="soyad">Soyad</label>
+                <input type="text" id="soyad" class="u-full-width">
+            </div>
+            <div>
+                <label for="mail">mail</label>
+                <input type="text" id="mail" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Kaydet" class="button-primary u-full-width">
+            </div>
+        </form>
+        <hr>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Email</th>
+                    <th>Islem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Recep</td>
+                    <td>Çelimli</td>
+                    <td>recep@hotmail.com</td>
+                    <td>
+                        <button class="btn btn--edit"><i class="far fa-edit"></i></button>
+                        <button class="btn btn--delete"><i class="fa-regular fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
